@@ -42,3 +42,10 @@ jobs:
             --region=${{ secrets.GCP_REGION }} \
             --allow-unauthenticated \
             --port=4173
+            --set-env-vars \
+              CURRENCY_API_URL=${{ secrets.CURRENCY_API_URL }},\
+              CURRENCY_API_KEY=${{ secrets.CURRENCY_API_KEY }}  
+              STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}  
+              STRIPE_PRODUCT_ID=${{ secrets.STRIPE_PRODUCT_ID }}  
+              STRIPE_SUCCESS_URL=${{ secrets.STRIPE_SUCCESS_URL }}  
+              STRIPE_CANCEL_URL=${{ secrets.STRIPE_CANCEL_URL }}  
