@@ -41,7 +41,7 @@ jobs:
             --platform=managed \
             --region=${{ secrets.GCP_REGION }} \
             --allow-unauthenticated \
-            --port=4173
+            --port=4173 \
             --set-env-vars \
               CURRENCY_API_URL=${{ secrets.CURRENCY_API_URL }},\
               CURRENCY_API_KEY=${{ secrets.CURRENCY_API_KEY }}  
